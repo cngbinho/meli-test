@@ -1,0 +1,54 @@
+@import "../variables";
+
+.item {
+	display: flex;
+
+	&:hover {
+		cursor: pointer;
+	}
+
+	> img {
+		width: 180px;
+		height: 180px;
+		margin: 16px 18px;
+		border-radius: 4px;
+		object-fit: contain;
+	}
+
+	.item_info {
+		flex: 1;
+
+		> div {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+
+			height: 50px;
+			margin-top: 30px;
+
+			.price {
+				height: 100%;
+
+				span {
+					font-size: 24px;
+				}
+				img {
+					margin-left: 10px;
+				}
+			}
+
+			.city {
+				display: flex;
+				align-items: flex-end;
+
+				height: 100%;
+				font-size: 12px;
+				margin-right: 100px;
+			}
+		}
+	}
+
+	.price-location {
+		display: flex;
+	}
+}
